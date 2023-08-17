@@ -1,9 +1,9 @@
-import BookCard from './BookCard';
+import BookList from './BookList';
 import AddBook from './AddBook';
 
 const Book = () => (
   <div className="Books">
-    <BookCard />
+    <BookList />
     <AddBook />
   </div>
 );
