@@ -21,12 +21,15 @@ const BookCard = ({ books }) => (
           <div className="bookInfo">
             <div className="progress" />
             <div className="progressInfo">
-              <p>64%</p>
+              <p>
+                {book.status}
+                %
+              </p>
               <p>Completed</p>
             </div>
             <div className="ChapterInfo">
               <p>CURRENT CHAPTER</p>
-              <p>Chapter 17</p>
+              <p>{book.chapter}</p>
               <button className="update" type="button">UPDATE PROGRESS</button>
             </div>
           </div>
