@@ -60,7 +60,7 @@ client: React and CSS.
 
 ### <a name="key-features"> Key Features </a>
 
-`math_magician project` key features are the following main projects:
+`BookStore Project` key features are the following main projects:
 
 ```
 Project-feature1: Create a react app template 
@@ -113,7 +113,7 @@ run npx json-server -p 3500 -w data/db.json
 
 [`Back to top`](#readme-top)
 
-##<a name="usage">Usage</a>
+### <a name="usage">Usage</a>
 To run the math_magician application, execute the following command: Open the project in code editor and run the project using npm start.
 
 [`Back to top`](#readme-top)
