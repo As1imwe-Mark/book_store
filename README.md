@@ -74,14 +74,6 @@ Project-feature6: Application deploy
 
 [`Back to top`](#readme-top)
 
-## 🚀 <a name="live-demo"> Live Demo </a>
-
-You can access the BookStore at this link below.
-
-coming soon
-
-[`Back to top`](#readme-top)
-
 
 ## 💻 <a name="getting-started"> Getting Started </a>
 
@@ -153,7 +145,7 @@ Please check the issues page.
 [`Back to top`](#readme-top)
 
 ## ⭐️ <a name="show-your-support">Show your support</a>
-If you like the [BookStore]() you can support our work. Visit other links [Mark personal page](https://as1imwe-mark.github.io/Portifolio_Website/).
+If you like the [BookStore](https://github.com/As1imwe-Mark/book_store) you can support our work. Visit other links [Mark personal page](https://as1imwe-mark.github.io/Portifolio_Website/).
 
 
 [`Back to top`](#readme-top)
