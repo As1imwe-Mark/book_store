@@ -1,6 +1,6 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { useState } from 'react';
-import { addBook } from '../feature/redux/books/bookSlice';
+import { createBook } from '../feature/redux/books/bookSlice';
 
 const AddBook = () => {
   const dispatch = useDispatch();
@@ -16,7 +16,7 @@ const AddBook = () => {
       author,
       category: 'Fiction',
     };
-    dispatch(addBook(booK));
+    dispatch(createBook(booK));
     setAuthor('');
     setTitle('');
   };

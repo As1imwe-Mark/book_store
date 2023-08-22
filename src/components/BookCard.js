@@ -1,11 +1,11 @@
 import { useDispatch } from 'react-redux';
-import { removeBook } from '../feature/redux/books/bookSlice';
+import { deleteBook } from '../feature/redux/books/bookSlice';
 
 /* eslint-disable react/prop-types */
 const BookCard = ({ books }) => {
   const dispatch = useDispatch();
-  const deleteBook = (itemId) => {
-    dispatch(removeBook(itemId));
+  const removeBook = (itemId) => {
+    dispatch(deleteBook(itemId));
   };
   return (
     <>
@@ -19,7 +19,7 @@ const BookCard = ({ books }) => {
             <div className="Book-btns">
               <button type="button">Comments</button>
               <div className="divide" />
-              <button onClick={() => { deleteBook(book.item_id); }} type="button">Remove</button>
+              <button onClick={() => { removeBook(book.item_id); }} type="button">Remove</button>
               <div className="divide" />
               <button type="button">Edit</button>
             </div>
