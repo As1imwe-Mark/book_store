@@ -3,7 +3,13 @@ import axios from 'axios';
 
 export const getBook = createAsyncThunk('book/getBook', async () => {
   const res = await axios.get('https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/6zvRNcEtP78mnXzUiDL7/books');
-  return res.data;
+  const books = Object.entries(res.data).map((item) => (
+    {
+      ...item[1][0],
+      item_id: item[0],
+    }
+  ));
+  return books;
 });
 
 export const createBook = createAsyncThunk('book/createBook', async (newBook) => {
@@ -19,7 +25,7 @@ export const deleteBook = createAsyncThunk('book/deleteBook', async (itemId) => 
 const initialState = {
   books: [],
   isLoading: false,
-  isError: undefined,
+  isError: null,
 };
 
 const bookSlice = createSlice({
@@ -45,9 +51,9 @@ const bookSlice = createSlice({
       state.books = action.payload;
     });
 
-    builder.addCase(getBook.rejected, (state) => {
+    builder.addCase(getBook.rejected, (state, action) => {
       state.isLoading = false;
-      state.isError = true;
+      state.isError = action.error.message;
     });
   },
 });
