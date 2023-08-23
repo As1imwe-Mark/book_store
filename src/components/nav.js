@@ -1,12 +1,14 @@
 import { Link } from 'react-router-dom';
+import UserIcon from './userIcon';
 
 const Nav = () => (
   <div className="nav">
-    <span>Bookstore CMS</span>
+    <span className="cms">Bookstore CMS</span>
     <nav>
-      <Link to="/">Book</Link>
-      <Link to="/categories">Categories</Link>
+      <Link className="nav-book" to="/">Book</Link>
+      <Link className="nav-category" to="/categories">Categories</Link>
     </nav>
+    <div className="icon"><UserIcon /></div>
   </div>
 );
 export default Nav;
